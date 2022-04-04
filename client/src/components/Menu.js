@@ -7,7 +7,9 @@ import Items from "./Items"
 function Menu() {
     const [menu, setMenu] = useState([])
     const [time, setTime] = useState([])
+    const [toggle, setToggle] = useState(false)
     const [loading, setLoading] = useState(true)
+    const toggleButton = () => setToggle(!toggle);
     const DbGetMenu = async () => {
         const newItems = []
         const res = db.collection("Menu")
@@ -28,6 +30,8 @@ function Menu() {
         })
         setTime(time.concat(newTime))
     }
+
+
     useEffect(() => {
         DbGetMenu()
         getTime()
@@ -37,8 +41,8 @@ function Menu() {
         <div className="container">
             <div className="Flex">
                 <div className="column is-flex">
-                    <button className="pickDel_btn">Pick up</button>
-                    <button className="pickDel_btn">Delivery</button>
+                    <button style={{backgroundColor: toggle ? '#A9ACB2' : '#D4D6D9' }} onClick={toggleButton} className="pickUp_btn">Pick up</button>
+                    <button className="delivery_btn"><a href={"http://menus.fyi/832273"} target={"_blank"}>Order GrubHub <br/> Delivery</a></button>
                     <div className='set_pickup_time'>
                         <div className='pickup_time'>
                             <h1 className="pickuptime_title"> Select Pick Up Time * </h1>
