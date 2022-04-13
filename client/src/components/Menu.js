@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import '../styles/styles.css'
 import {db} from "../firebase"
-import Collapsible from 'react-collapsible'
-import Items from "./Items"
+import Meals from "./Meals";
 
 function Menu() {
     const [menu, setMenu] = useState([])
@@ -61,26 +60,26 @@ function Menu() {
                 </div>
 
             </div>
+            <Meals/>
 
+            {/*<div className="Flex">*/}
+            {/*    <div className="Flex1">*/}
 
-            <div className="Flex">
-                <div className="Flex1">
-
-                    {
-                        menu.map(((item, ind) =>
-                                <div>
-                                    <div className="column is-flex">
-                                        <div className="field">
-                                            <Collapsible key={ind} trigger={item.type}>
-                                                <Items />
-                                            </Collapsible>
-                                        </div>
-                                    </div>
-                                </div>
-                        ))
-                    }
-                </div>
-            </div>
+            {/*        {*/}
+            {/*            menu.map(((item, ind) =>*/}
+            {/*                    <div>*/}
+            {/*                        <div className="column is-flex">*/}
+            {/*                            <div className="field">*/}
+            {/*                                <Collapsible key={ind} trigger={item.type}>*/}
+            {/*                                    <Items />*/}
+            {/*                                </Collapsible>*/}
+            {/*                            </div>*/}
+            {/*                        </div>*/}
+            {/*                    </div>*/}
+            {/*            ))*/}
+            {/*        }*/}
+            {/*    </div>*/}
+            {/*</div>*/}
         </div>
     )
 }

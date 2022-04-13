@@ -819,3 +819,50 @@ h1 {
     width: 5vw;
     height: 3.4vh;
 }
+
+/* New menu style*/
+.menuButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.collapse-button{
+    display: block;
+    width: 80%;
+    padding: 12px;
+    margin: 15px;
+    border: none;
+}
+
+.collapse-content.collapsed {
+    display: none;
+}
+
+.collapsed-content.expanded {
+    display: inline-block;
+
+
+}
+.collapse-content{
+    /*background-color:rgba(0, 21, 20, 35%);*/
+    overflow: hidden;
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.itemCard{
+    width: 100%;
+    height: 100%;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
