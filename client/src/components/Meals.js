@@ -118,19 +118,3 @@ function Meals() {
 }
 
 export default Meals;
-
-{/*{*/}
-{/*    item.map(({data, id}) => (*/}
-{/*        <div*/}
-{/*            className={`collapse-content ${isCollapsed ? 'collapsed' : 'expanded'}`}*/}
-{/*            aria-expanded={isCollapsed}*/}
-{/*        >*/}
-{/*            <Card className={"itemCard"} key={id}>*/}
-{/*                <p>{data.Name}</p>*/}
-{/*                <p>{data.Description}</p>*/}
-{/*                <p>Cost: {data.Price}</p>*/}
-{/*                <button>Add to cart</button>*/}
-{/*            </Card>*/}
-{/*        </div>*/}
-{/*    ))*/}
-{/*}*/}
