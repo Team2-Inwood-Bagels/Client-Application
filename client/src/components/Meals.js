@@ -70,45 +70,47 @@ function Meals() {
                             <Tab label="Breakfast Sandwiches" value="3" />
                         </TabList>
                     </Box>
-                    {
-                        item.map(({data, id}) => (
-                            <TabPanel value={"3"} onScrollCapture={true}>
-                                <Card className={"itemCard"} key={id}>
-                                    <p>{data.Name}</p>
-                                    <p>{data.Description}</p>
-                                    <p>Cost: {data.Price}</p>
-                                    <button>Add to cart</button>
-                                </Card>
-                            </TabPanel>
+                    <div className={"meals_container"} >
+                        {
+                            item.map(({data, id}) => (
+                                <TabPanel value={"3"}>
+                                    <Card style={{backgroundColor: "#3D3D3D", color:"white", borderRadius: "20px"}} className={"customCard"} key={id}>
+                                        <p>{data.Name}</p>
+                                        <p>{data.Description}</p>
+                                        <p>Cost: {data.Price}</p>
+                                        <button className={"addToCart_btn"}>Add to cart</button>
+                                    </Card>
+                                </TabPanel>
 
-                        ))
-                    }
-                    {
-                        cream.map(({data, id}) => (
-                            <TabPanel value={"2"} onScrollCapture={true}>
-                                <Card className={"itemCard"} key={id}>
-                                    <p>{data.name}</p>
-                                    {/*<p>{data.Description}</p>*/}
-                                    {/*<p>Cost: {data.Price}</p>*/}
-                                    <button>Add to cart</button>
-                                </Card>
-                            </TabPanel>
+                            ))
+                        }
+                        {
+                            cream.map(({data, id}) => (
+                                <TabPanel value={"2"}>
+                                    <Card style={{backgroundColor: "#3D3D3D", color:"white", borderRadius: "20px"}} className={"customCard"} key={id}>
+                                        <p>{data.name}</p>
+                                        {/*<p>{data.Description}</p>*/}
+                                        {/*<p>Cost: {data.Price}</p>*/}
+                                        <button className={"addToCart_btn"}>Add to cart</button>
+                                    </Card>
+                                </TabPanel>
 
-                        ))
-                    }
-                    {
-                        bagels.map(({data, id}) => (
-                            <TabPanel value={"1"} onScrollCapture={true}>
-                                <Card className={"itemCard"} key={id}>
-                                    <p>{data.name}</p>
-                                    {/*<p>{data.Description}</p>*/}
-                                    {/*<p>Cost: {data.Price}</p>*/}
-                                    <button>Add to cart</button>
-                                </Card>
-                            </TabPanel>
+                            ))
+                        }
+                        {
+                            bagels.map(({data, id}) => (
+                                <TabPanel value={"1"} >
+                                    <Card style={{backgroundColor: "#3D3D3D", color:"white", borderRadius: "20px"}} className={"customCard"} key={id}>
+                                        <p>{data.name}</p>
+                                        {/*<p>{data.Description}</p>*/}
+                                        {/*<p>Cost: {data.Price}</p>*/}
+                                        <button className={"addToCart_btn"}>Add to cart</button>
+                                    </Card>
+                                </TabPanel>
 
-                        ))
-                    }
+                            ))
+                        }
+                    </div>
                 </TabContext>
             </Box>
 
