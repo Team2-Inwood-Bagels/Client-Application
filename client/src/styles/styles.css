@@ -96,12 +96,24 @@ footer {
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.pickDel_btn{
+.pickUp_btn{
     margin-right: 15px;
     border-radius: 15px;
     padding: 15px;
     border: lightgray 2px solid;
     box-shadow: 1px 2px 10px 0 rgba(0, 5, 25, .3);
+    font-weight: bold;
+}
+.delivery_btn{
+    background-color: #ff8400;
+    border-radius: 15px;
+    padding: 15px;
+    border: #ff8400 2px solid;
+    font-weight: bold;
+}
+.delivery_btn a{
+    color: #fff;
+    text-decoration: none;
 }
 
 
