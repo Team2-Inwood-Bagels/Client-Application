@@ -9,8 +9,9 @@ function NavBarGuest() {
             <NavLink to="/menu" exact activeClassName="bordered-active" className="navbar-item">Menu </NavLink>
             <NavLink to="/location" exact activeClassName="bordered-active"
                      className="navbar-item">Location </NavLink>
-            <NavLink to="/order" exact activeClassName="bordered-active" className="navbar-item">Order
-                Online </NavLink>
+            <NavLink to="/order" exact activeClassName="bordered-active" className="navbar-item">
+                <input className='searchmenu' type="text" placeholder=" Search Menu"/>
+            </NavLink>
             <NavLink to="/signin" exact activeClassName="bordered-active" className="navbar-item">Sign
                 In </NavLink>
             <NavLink to="/signup" exact activeClassName="bordered-active" className="navbar-item">Sign

@@ -13,7 +13,7 @@ function NavBarLogged() {
                      className="navbar-item">Location </NavLink>
             <NavLink to="/order" exact activeClassName="bordered-active" className="navbar-item">Order
                 Online </NavLink>
-            <NavLink to="/settings" exact activeClassName="bordered-active" className="navbar-item">Settings </NavLink>
+            <NavLink to="/settings" exact activeClassName="bordered-active" className="navbar-item">Account </NavLink>
             <button className="navbar-button" onClick={logout}>Log out</button>
         </div>
     )
