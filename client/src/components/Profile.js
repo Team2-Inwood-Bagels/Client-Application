@@ -46,9 +46,8 @@ function Profile() {
             <div className="Flex">
                 <div className="Flex1">
                     <div className="signup">
-                        <div>
-                            <div>
-                                Name
+                        <div className='signup_common'>
+                            <div className='user'> Name
                                 <input
                                     type="text"
                                     className="signup_textBox"
@@ -56,50 +55,35 @@ function Profile() {
                                     placeholder={user.name}
                                 />
                             </div>
-                            <div> Email Address
+                            <div className='user'> Email Address
                                 <input
                                     type="text"
                                     className="signup_textBox"
                                     value={email}
                                     placeholder={email}
-                                /></div>
-                            Delivery Address
-                            <div>
-                                Address
-                                <input
-                                    type="text"
-                                    className="signup_textBox"
-                                    value={address}
-                                    placeholder={address}
                                 />
                             </div>
-
-                            <div> City
-                                <input
-                                    type="text"
-                                    className="signup_textBox"
-                                    value={city}
-                                    placeholder={city}
-                                /></div>
-                            <div>
-                                State
-                                <input
-                                    type="text"
-                                    className="signup_textBox"
-                                    value={stateUS}
-                                    placeholder={stateUS}
+                        </div>
+                        <div className='card_detailss'>
+                            <div className='cards'> Card Number
+                                <input 
+                                    className='card_textbox' 
+                                    type="text" 
+                                    placeholder="Enter Card Number"
                                 />
                             </div>
-                            <div>
-                                Zip Code
-                                <input
-                                    type="zip"
-                                    className="signup_textBox"
-                                    value={zip}
-                                    placeholder={zip}
+                            <div className='cards'> Card Expiration Date
+                                <input 
+                                    className='card_textbox' 
+                                    type="text" 
+                                    placeholder="Enter Card Expiration Date"
                                 />
                             </div>
-
+                            <div className='card_btn'>
+                                <button className="addcard_btn">
+                                   Add Credit/Debit Card
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

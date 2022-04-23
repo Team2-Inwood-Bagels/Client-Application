@@ -7,7 +7,14 @@ const Footer = () => (
         <div className="columns has-text-centered level">
             <div className="column">
                 <div className="is-flex is-justify-content-center level">
-                    <span>Follow us on Instagram</span>
+                    <span> 
+                        <a 
+                            className="instagram_link_color" 
+                            href="https://www.instagram.com/inwoodbagelsny/?hl=en" 
+                            target="_blank"> 
+                            Follow us on Instagram 
+                        </a>
+                    </span>
                     <figure className="image is-64x64">
                         <img src={image}/>
                     </figure>
