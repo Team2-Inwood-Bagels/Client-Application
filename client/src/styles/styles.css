@@ -8,7 +8,7 @@ footer {
     bottom: 0;
     display: block;
     width: 100%;
-    padding: 0px !important;
+    padding: 0 !important;
     /* same size as header */
 }
 
@@ -818,4 +818,46 @@ h1 {
     color: white;
     width: 5vw;
     height: 3.4vh;
+}
+
+/* New menu style*/
+
+.customCard{
+    width: 400px;
+    height: 290px;
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 15px 15px;
+    position: relative;
+    bottom: 25px;
+
+}
+
+.meals_container{
+    height: 100vh;
+    top: 15px;
+    width: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+@media screen
+    and (min-width: 1200px)
+    and (max-width: 1600px) {
+    .meals_container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        /*overflow-y: auto;*/
+        bottom: 90px;
+    }
 }
