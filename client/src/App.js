@@ -3,19 +3,12 @@ import NavBar from "./components/NavBar"
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import Menu from './components/Menu'
 import Location from './components/Location'
-import Order from './components/Order'
 import Signin from './components/Signin'
 import Signup from './components/Signup'
 import Home from "./components/Home"
 import Footer from "./components/Footer"
 import Profile from "./components/Profile"
 import Resetpassword from './components/ResetPassword'
-import Admin from './components/Admin'
-import AdminSignin from './components/AdminSignIn'
-import AdminSignup from './components/AdminSignUp'
-import AdminResetPassword from './components/AdminResetPassword'
-import AdminAccount from './components/AdminAccount'
-import UpdateAccountInformation from './components/UpdateAdminAccountInfo'
 import Cart from "./components/Cart";
 
 const divStyle = {
@@ -34,17 +27,10 @@ function App() {
                     <Route exact path="/" component={Home}/>
                     <Route exact path="/menu" component={Menu}/>
                     <Route exact path="/location" component={Location}/>
-                    <Route path="/order" component={Order}/>
                     <Route path="/signin" component={Signin}/>
                     <Route exact path="/resetpassword" component={Resetpassword}/>
                     <Route exact path="/signup" component={Signup}/>
                     <Route path="/settings" component={Profile}/>
-                    <Route exact path="/admin" component={Admin}/>
-                    <Route exact path="/adminsignin" component={AdminSignin}/>
-                    <Route exact path="/adminsignup" component={AdminSignup}/>
-                    <Route exact path="/adminresetpassword" component={AdminResetPassword}/>
-                    <Route exact path="/adminaccount" component={AdminAccount}/>
-                    <Route exact path="/updateaccountinfo" component={UpdateAccountInformation}/>
                     <Route exact path={"/cart"} component={Cart}/>
                 </Switch>
             </Router>

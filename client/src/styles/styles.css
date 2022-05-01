@@ -32,26 +32,7 @@ footer {
     color: rgba(0, 0, 2, 0.76);
     width: 100%;
     margin: 9px;
-    box-shadow: 2px 2px 8px 0px rgba(0, 5, 25, .3);
-}
-
-.field {
-    display: flex;
-    flex: 0 0 100%;
-    width: 180%;
-}
-
-
-/* menu styling */
-
-.column.is-flex {
-    display: flex;
-    font-weight: bold;
-    font-size: 24px;
-    color: rgba(0, 0, 2, 0.76);
-    width: 100%;
-    margin: 9px;
-    box-shadow: 2px 2px 8px 0px rgba(0, 5, 25, .3);
+    box-shadow: 2px 2px 8px 0 rgba(0, 5, 25, .3);
 }
 
 .field {
@@ -76,76 +57,7 @@ footer {
     width: 15vw;
 }
 
-.pickuptime_title {
-    font-size: medium;
-}
 
-
-/* item styling */
-.item_s {
-    display: flex;
-    color: grey;
-    flex-direction: column;
-    column-gap: 25px;
-    font-weight: bolder;
-    height: 75px;
-    box-shadow: 1px 2px 10px 0 rgba(0, 5, 25, .3);
-    margin: 9px;
-    padding-left: 10px;
-    padding-top: 10px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.pickUp_btn{
-    margin-right: 15px;
-    border-radius: 15px;
-    padding: 15px;
-    border: lightgray 2px solid;
-    box-shadow: 1px 2px 10px 0 rgba(0, 5, 25, .3);
-    font-weight: bold;
-}
-.delivery_btn{
-    background-color: #ff8400;
-    border-radius: 15px;
-    padding: 15px;
-    border: #ff8400 2px solid;
-    font-weight: bold;
-}
-.delivery_btn a{
-    color: #fff;
-    text-decoration: none;
-}
-
-
-.item_container {
-    display: flex;
-    flex-direction: column;
-}
-
-h5 {
-    display: flex;
-    color: rgb(10, 10, 10);
-    flex-wrap: wrap;
-    justify-content: space-between;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-h2 {
-    font-size: 18px;
-}
-
-.Collapsible__contentInner {
-    display: flex;
-    flex: 0 0 100%;
-    width: 180%;
-}
-
-.Collapsible__contentOuter {
-    display: flex;
-    flex-wrap: wrap;
-    width: 180%;
-}
 
 
 /* signin */
@@ -264,13 +176,6 @@ h2 {
     width: 90%;
 }
 
-p {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    font-size: 18px;
-    font-weight: bold;
-}
 
 .signup_textBox {
     display: flex;
@@ -308,9 +213,6 @@ p {
     font-weight: bold;
 }
 
-h1 {
-    font-weight: bolder;
-}
 
 h2 {
     font-weight: bolder;
@@ -362,491 +264,79 @@ h2 {
 }
 
 
-/* Cart */
-
-.add {
-    display: flex;
-    flex-direction: row;
-    align-content: flex-start;
-}
-
-
-/* Admin home page */
-
-.admin {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 5%;
-    height: 70vh;
-    width: 100vw;
-}
-
-.admin_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.adminicon {
-    width: 15rem;
-}
-
-.signin_admin {
-    align-items: center;
-    background-color: black;
-    color: white;
-    width: 13.5vw;
-    padding: 3px;
-    margin-top: 35%;
-    font-size: large;
-}
-
-.admincreatebtn {
-    background-color: black;
-    color: white;
-    margin-top: 35%;
-    padding: 3px;
-    font-size: medium;
-    width: 13.5vw;
-}
-
-
-/* admin signin */
-
-.adminsignin {
-    height: 70vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Arial;
-}
-
-.adminsignin_container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 30px;
-    font-weight: bold;
-    justify-content: space-between;
-}
-
-.adminsignin_textBox {
-    padding: 4px;
-    font-size: 15px;
-    margin-bottom: 10px;
-    color: black;
-}
-
-.adminemail_box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.adminpassword_box {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5%;
-}
-
-.btns {
-    display: flex;
-    flex-direction: column;
-}
-
-.adminsignin_btn {
-    font-size: 20px;
-    margin-bottom: 10px;
-    border: none;
-    color: white;
-    background-color: black;
-    margin-top: 5%;
-    width: 20vw;
-    height: 4.6vh;
-}
-
-.signin div {
-    margin-top: 7px;
-}
-
-.adminresetpswrd_redirect {
-    margin-top: 10%;
-}
-
-.admincreate_reset {
-    margin-top: 10%;
-}
-
-
-/* admin signup */
-
-.adminsignup {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.adminsignup_container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 30px;
-    width: 70%;
-    height: 90%;
-}
-
-.adminsignup_textBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    padding-left: 4px;
-    padding-bottom: 4px;
-    font-size: 18px;
-    margin-bottom: 16px;
-    width: 60%;
-    height: 80%;
-}
-
-.adminsignup_btn {
-    padding: 10px;
-    font-size: 18px;
-    margin-bottom: 10px;
-    border: none;
-    color: white;
-    background-color: black;
-}
-
-.adminsignup div {
-    margin-top: 20px;
-}
-
-.adminfill_in {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.admin_deatils {
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 20%;
-}
-
-.admin_credentials {
-    display: flex;
-    justify-content: space-between;
-}
-
-.adminuser_details {
-    display: flex;
-    justify-content: space-between;
-}
-
-.adminsignup_box {
-    display: flex;
-    flex-direction: column;
-}
-
-.dropdown {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.employee_roles {
-    width: 100%;
-    height: 4vh;
-}
-
-.adminfillin_dropdown {
-    width: 95vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-
-/* admin reset password */
-
-.adminresetpassword {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-}
-
-.adminpassword_container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-weight: bold;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 3%;
-    width: 70%;
-}
-
-.admin_box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 80vw;
-    margin-top: 3%;
-}
-
-.adminresetpassword_details {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-top: 4%;
-    width: 40vw;
-}
-
-.adminemail {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 15vw;
-}
-
-.employee_name {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 15vw;
-}
-
-.adminresetpassword_box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 6%;
-    width: 40vw;
-}
-
-.admin_newpassword {
-    display: flex;
-    flex-direction: column;
-    width: 15vw;
-}
-
-.admin_reenter_newpassword {
-    display: flex;
-    flex-direction: column;
-    width: 15vw;
-}
-
-.adminemail_textBox {
-    /* padding: 6px; */
-    font-size: 15px;
-    /* margin-bottom: 10px; */
-    color: black;
-}
-
-.admin_resetpswrd_submit_btn {
-    /* padding: 6px; */
-    font-size: 18px;
-    margin-top: 8%;
-    border: none;
-    color: white;
-    background-color: black;
-    width: 20%;
-    height: 5vh;
-}
-
-.employeename_textBox {
-    margin-top: 2%;
-    height: 4vh;
-}
-
-.adminemail_textBox {
-    margin-top: 2%;
-    height: 4vh;
-}
-
-.employeepswrd_textBox {
-    margin-top: 2%;
-    height: 4vh;
-}
-
-.employee_reenter_textBox {
-    margin-top: 2%;
-    height: 4vh;
-}
-
-
-/* Admin Account */
-
-.admin_acc {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 40vw;
-    height: 20vh;
-    margin-top: 10%;
-}
-
-.name_email {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 7%;
-}
-
-.role_pswrd {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 13%;
-    width: 34vw;
-}
-
-.role {
-    display: flex;
-    margin-top: 2%;
-    height: 4vh;
-    font-weight: bold;
-}
-
-.pswrd {
-    display: flex;
-    margin-top: 2%;
-    height: 4vh;
-    font-weight: bold;
-}
-
-.adminame {
-    display: flex;
-    margin-top: 2%;
-    height: 4vh;
-    font-weight: bold;
-}
-
-.adminemail {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 2%;
-    height: 4vh;
-    font-weight: bold;
-}
-
-.update_btn {
-    background-color: black;
-    color: white;
-    width: 10vw;
-    height: 5.4vh;
-    margin-top: 23%;
-    font-size: 90%;
-}
-
-
-/* UpdateAccount Information */
-
-h1 {
-    margin-top: 5%;
-}
-
-.update_adminame {
-    display: flex;
-    flex-direction: column;
-    width: 15vw;
-    font-weight: bold;
-}
-
-.update_adminame_textBox {
-    height: 3.4vh;
-    margin-top: 5%;
-}
-
-.update_adminemail_textBox {
-    height: 3.4vh;
-    margin-top: 5%;
-}
-
-.update_adminemail {
-    display: flex;
-    flex-direction: column;
-    width: 15vw;
-    font-weight: bold;
-}
-
-.update_employee_roles {
-    height: 3.4vh;
-    margin-top: 4%;
-}
-
-.updateadmin_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 70vh;
-}
-
-.update_info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 60vw;
-}
-
-.update_dropdown {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0%;
-    width: 15vw;
-    font-weight: bold;
-}
-
-.update_info_btn {
-    background-color: black;
-    color: white;
-    width: 5vw;
-    height: 3.4vh;
-}
-
 /* New menu style*/
 
-.customCard{
-    width: 400px;
-    height: 290px;
-    background-color: #000;
-    color: #fff;
-    padding: 40px;
+.menu_container{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    margin: 20px 0 20px 50px;
+}
+.menuTitle{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.menuCard{
+    box-shadow: 10px 10px;
+    width: 450px;
+    height: 200px;
+    padding: 20px;
     border-radius: 20px;
     margin: 15px 15px;
     position: relative;
     bottom: 25px;
-
-}
-
-.meals_container{
-    height: 100vh;
-    top: 15px;
-    width: 110%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    overflow-y: scroll;
-    padding-bottom: 20px;
-    position: relative;
+    justify-content: space-between;
+
 }
+
+.card_descrip, .card_cost, .card_header{
+    font-family: 'Poppins', sans-serif;
+}
+
+.card_descrip{
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+.card_header{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+
+}
+.pickUp_btn{
+    margin-right: 15px;
+    border-radius: 15px;
+    padding: 15px;
+    border: lightgray 2px solid;
+    box-shadow: 1px 2px 10px 0 rgba(0, 5, 25, .3);
+    font-weight: bold;
+}
+.delivery_btn{
+    background-color: #ff8400;
+    border-radius: 15px;
+    padding: 15px;
+    border: #ff8400 2px solid;
+    font-weight: bold;
+}
+.delivery_btn a{
+    color: #fff;
+    text-decoration: none;
+}
+
 
 @media screen
     and (min-width: 1200px)
