@@ -4,14 +4,18 @@ import {db} from "../firebase"
 import BreakfastSandwich from "./BreakfastSandwich";
 import Bagels from "./Bagels";
 import CreamCheese from "./CreamCheese";
-import {FormControl, MenuItem, Select} from "@mui/material";
+import {Button, Divider, FormControl, InputLabel, MenuItem, Select} from "@mui/material";
+import PickUpTime from "./PickUpTime";
 
 function Menu() {
     const [menu, setMenu] = useState([])
+    const [menuName, setMenuName] = useState("")
     const [time, setTime] = useState([])
     const [toggle, setToggle] = useState(false)
     const [loading, setLoading] = useState(true)
     const [age, setAge] = React.useState("");
+
+
     const toggleButton = () => setToggle(!toggle);
     const DbGetMenu = async () => {
         const newItems = []
@@ -35,7 +39,7 @@ function Menu() {
     }
 
     const handleChange = (event) => {
-        setAge(event.target.value);
+        setMenuName(event.target.value);
     };
 
     useEffect(() => {
@@ -48,20 +52,29 @@ function Menu() {
            <div className={"menus"}>
                <FormControl
                    variant={"outlined"}
+                   style={{width: "25%"}}
                >
+                   <InputLabel id={"Menu Categories"}>Menu Categories</InputLabel>
                    <Select
-                       labelId="demo-simple-select-label"
+                       labelId="Menu Categories"
                        id="demo-simple-select"
-                       value={"Breakfast Sandwiches"}
+                       label={"Menu Categories"}
+                       value={menuName}
                        onChange={handleChange}
-
                    >
                        <MenuItem value={"Breakfast Sandwiches"} className={"menuTitleSelectList"} ><a href={"#breakSandwiches"}>Breakfast Sandwiches</a></MenuItem>
                        <MenuItem value={"Bagels"} className={"menuTitleSelectList"}><a href={"#bagels"}>Bagels</a></MenuItem>
                        <MenuItem value={"Cream Cheese"} className={"menuTitleSelectList"}><a href={"#creamcheese"}>Cream Cheese</a></MenuItem>
                    </Select>
                </FormControl>
-
+               <Divider
+                   style={{
+                       borderBottomColor: "lightgray",
+                       borderBottomWidth: "1",
+                       marginTop: "30px",
+                       width: "130%"
+                   }}
+               />
                <h1 className={"menuTitle"} id={"breakSandwiches"}><a href={"#breakSandwiches"}>Breakfast Sandwiches</a> </h1>
                <BreakfastSandwich/>
                <h1 className={"menuTitle"} id={"bagels"}><a href={"#bagels"}>Bagels</a></h1>
@@ -72,22 +85,24 @@ function Menu() {
 
             <div className={"setTime"}>
                <div className={"pickUpSec"} style={{marginBottom: "25px"}}>
-                   <button style={{backgroundColor: toggle ? '#A9ACB2' : '#D4D6D9' }} onClick={toggleButton} className="pickUp_btn">Pick up</button>
+                   <Button
+                       style={{backgroundColor: toggle ? '#A9ACB2' : '#D4D6D9' , marginRight: "10px", height: "50px", color: "#fff", fontWeight: "bold"}}
+                       onClick={toggleButton} className="pickUp_btn"
+                   >
+                       Pick up
+                   </Button>
                    <p style={{display: "inline", marginRight: "5px"}}>At </p>
-                   <select>
-                       {
-                           time.map((clock, id) => (
-                               <option value={clock.time}>{clock.time}</option>
-                           ))
-                       }
-                   </select>
-
+                   <PickUpTime/>
                </div>
-                <div>
-                    <button className="delivery_btn"><a href={"http://menus.fyi/832273"} target={"_blank"}>Order GrubHub <br/> Delivery</a></button>
-                </div>                      {
+                <Button
+                    className="delivery_btn"
+                    variant={"contained"}
+                    style={{backgroundColor: "#ff8400",  fontWeight: "bold"}}
+                >
+                    <a href={"http://menus.fyi/832273"} target={"_blank"} rel="noreferrer">Order GrubHub
+                        <br/> Delivery</a>
+                </Button>
 
-            }
 
             </div>
 
