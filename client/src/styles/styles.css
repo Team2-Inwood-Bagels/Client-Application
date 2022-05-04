@@ -32,7 +32,7 @@ footer {
     color: rgba(0, 0, 2, 0.76);
     width: 100%;
     margin: 9px;
-    box-shadow: 2px 2px 8px 0px rgba(0, 5, 25, .3);
+    box-shadow: 2px 2px 8px 0 rgba(0, 5, 25, .3);
 }
 
 .field {
@@ -61,25 +61,6 @@ footer {
 }
 
 
-/* set pick up time */
-
-.set_pickup_time {
-    display: flex;
-    flex-direction: column;
-}
-
-.pickup_time {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3%;
-    margin-left: 5%;
-    width: 15vw;
-}
-
-.pickuptime_title {
-    font-size: medium;
-}
-
 
 /* item styling */
 
@@ -98,14 +79,6 @@ footer {
     flex-wrap: wrap;
 }
 
-.pickUp_btn {
-    margin-right: 15px;
-    border-radius: 15px;
-    padding: 15px;
-    border: lightgray 2px solid;
-    box-shadow: 1px 2px 10px 0 rgba(0, 5, 25, .3);
-    font-weight: bold;
-}
 
 .delivery_btn {
     background-color: #ff8400;
@@ -160,6 +133,7 @@ h2 {
 .instagram_link_color {
     color: white;
 }
+
 
 
 /* signin */
@@ -255,6 +229,7 @@ h2 {
     display: block;
     margin: 20px;
 }
+
 .signup_fields{
     text-align: center;
 }
@@ -264,6 +239,7 @@ h2 {
     margin-top: 60px;
     font-size: 30px;
 }
+
 
 
 .signup_btn {
@@ -283,6 +259,23 @@ h2 {
     background-color: #4285f4;
 }
 
+.signup div {
+    margin-top: 20px;
+}
+
+.fill_in {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+h2 {
+    font-weight: bolder;
+    text-align: center;
+}
+
 
 
 /* Password Reset */
@@ -290,7 +283,6 @@ h2 {
 .resetpassword {
     align-items: center;
     padding: 200px;
-    padding-left: 490px;
     width: 83%;
 }
 
@@ -329,6 +321,89 @@ h2 {
 }
 
 
+/* New menu style*/
+
+.menu_container{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    margin: 50px 0 20px 50px;
+}
+.menuTitle{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.menuCard{
+    box-shadow: 10px 10px;
+    width: 450px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 15px 15px;
+    position: relative;
+    bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card_descrip, .card_cost, .card_header{
+    font-family: 'Poppins', sans-serif;
+}
+
+.card_descrip{
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+.card_header{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+
+}
+
+.delivery_btn{
+    background-color: #ff8400;
+    border-radius: 15px;
+    padding: 15px;
+    border: #ff8400 2px solid;
+    font-weight: bold;
+}
+.delivery_btn a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.setTime{
+    margin-top: 120px;
+}
+
+@media screen
+    and (min-width: 1200px)
+    and (max-width: 1600px) {
+    .meals_container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        /*overflow-y: auto;*/
+        bottom: 90px;
+    }
+
 /* Cart */
 
 .add {
@@ -345,4 +420,5 @@ h2 {
     width: 10vw;
     padding-left: 2%;
     border-radius: 2%;
+
 }
