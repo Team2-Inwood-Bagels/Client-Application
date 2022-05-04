@@ -11,6 +11,7 @@ import Profile from "./components/Profile"
 import Resetpassword from './components/ResetPassword'
 import Cart from "./components/Cart";
 
+
 const divStyle = {
     backgroundImage: 'url("https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/255773017_4583362898373572_1745065988058525732_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=qZZaJQhsjwMAX9PTfOu&_nc_ht=scontent-lga3-1.xx&oh=3eddf9e82ed2dbfa985bce7cacf59bf6&oe=619245E6)',
     backgroundPosition: 'center',
@@ -32,6 +33,7 @@ function App() {
                     <Route exact path="/signup" component={Signup}/>
                     <Route path="/settings" component={Profile}/>
                     <Route exact path={"/cart"} component={Cart}/>
+
                 </Switch>
             </Router>
             <Footer/>

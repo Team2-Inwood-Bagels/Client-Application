@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import {Link, useHistory} from 'react-router-dom'
 import {auth, signInWithEmailAndPassword, signInWithGoogle} from '../firebase'
 import {useAuthState} from 'react-firebase-hooks/auth'
+import TextField from '@mui/material/TextField';
 import '../styles/styles.css'
 
 function Signin() {
@@ -23,25 +24,29 @@ function Signin() {
     return (
         <div className="signin">
             <div className="signin_container">
+                <h1>Sign In</h1>
                 <div className='credentials'>
                     <div className='email_box'>
-                        Email Address
-                        <input
-                            type="text"
+                        <TextField
+                            type="email"
+                            label={"Email Address"}
                             className="signin_textBox"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            placeholder="E-mail Address"
+                            placeholder="e.g. john@gmail.com"
+                            required={true}
                         />
                     </div>
                     <div className='password_box'>
-                        Password
-                        <input
+                        <TextField
+                            label={"Enter Password"}
                             type="password"
                             className="signin_textBox"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             placeholder="Password"
+                            style={{marginBottom: "20px"}}
+                            required={true}
                         />
                     </div>
                 </div>
