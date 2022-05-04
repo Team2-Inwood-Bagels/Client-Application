@@ -394,7 +394,7 @@ a{
 @media screen
     and (min-width: 1200px)
     and (max-width: 1600px) {
-    .meals_container{
+    .meals_container {
         width: 100%;
         display: flex;
         align-items: center;
@@ -403,7 +403,7 @@ a{
         /*overflow-y: auto;*/
         bottom: 90px;
     }
-
+}
 /* Cart */
 
 .add {
